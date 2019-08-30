@@ -1,0 +1,378 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				CV template by Bianca Viray					%
+%	This file may be used and modified however you wish		%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt]{article}
+\usepackage{graphicx,url}
+\usepackage{enumitem,amsmath}
+\usepackage[T1]{fontenc} % needed to allow bold smallcaps
+
+% Color comments!
+\usepackage[usenames,dvipsnames]{color} % needed to make heading bars gray
+
+\oddsidemargin = -5pt
+\topmargin =-20pt
+\headheight = 18pt     
+\textheight = 620pt %preferred height
+\textwidth = 495pt %preferred width
+
+\parskip=.3pt plus 1pt
+
+%%%%%%%%%%%%%%%%%%%%%%% 		Header commands		%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\cfoot{}	% no footers (in pagestyle fancy) 
+\fancyheadoffset{6mm}	% extends line over gray heading bars
+\lhead{{\noindent{ \large{Lucas Van Meter}}}}   % running left heading
+\rhead{{\thepage}}							 % running right heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%			Section commands	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sectionheading}[1]
+	{\bigskip %insert space before beginning section
+	\noindent
+	\hspace{-6.5mm}\textcolor{Gray}{\rule[.75mm]{21.5mm}{1mm}}
+	%\hspace{-13.5mm}\textcolor{Gray}{\rule[.75mm]{28.5mm}{1mm}} % make Gray line
+	\hspace{.2mm}	% insert space between line and section name
+	{\large{\textbf{\textsc{#1}}}} % make section large font and bold smallcaps
+}
+
+\newenvironment{date_section}
+	{
+	\vspace{-1ex}
+	\leftmargini = 15ex
+	 \begin{itemize}[
+		 labelsep = *,
+		 labelwidth = 9ex,
+		 % leftmargin = 10ex,
+		 labelindent = 0ex,
+		 itemindent = !,
+		 font=\normalfont, 
+		 align=parleft
+		 ]
+		{}
+		\itemsep=-1.5mm}
+	{\end{itemize}\vspace{-2ex}}
+	
+\newenvironment{date_section_bullets}
+	{
+	\vspace{-1ex}
+	\leftmargini = 15ex
+	 \begin{itemize}[
+		 labelsep = *,
+		 labelwidth = 9ex,
+		 % leftmargin = 10ex,
+		 labelindent = 0ex,
+		 itemindent = !,
+		 font=\normalfont, 
+		 align=parleft
+		 ]
+		{}
+		\itemsep=-1.5mm}
+	{\end{itemize}\vspace{-2ex}}
+
+
+% To be used as
+%		\yearmo{2013}{Jun.}
+% or	\yearmo{2013}{Fall}
+% or 	\yearmo{}{2013}, etc.
+\newcommand{\yearmo}[2]{
+	\item[\hspace{-5.75ex} 
+		{\makebox[.0005ex][r]{#1}}
+		\hspace{1.15ex}
+		{\makebox[.05ex][l]{#2} }
+		] }
+		
+		\newcommand{\yearsingle}[2]{
+			\item[  
+				{\makebox[.0005ex][r]{#1}}
+				\hspace{2ex}
+				{\makebox[.05ex][l]{#2} }
+				] }
+
+% To be used as
+%		\yearmo{2010}{2013}
+% or	\yearmo{2010}{}
+\newcommand{\yearrange}[2]{
+	\item[ 
+		{\makebox[1ex][r]{#1}}
+		--
+		{\makebox[1ex][l]{#2} }
+		] }
+		
+
+\newcommand{\yearexp}[1]{
+	\item[ \hspace{1.79ex}
+		{\makebox[1ex][c]{#1}}
+		] }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\thispagestyle{empty}
+
+	\centerline{{\LARGE \sc\textbf{Lucas Van Meter}}}
+
+	\vspace{3mm}
+
+	\begin{center}
+	\setlength{\tabcolsep}{8pt}
+		\begin{tabular}[c]{lll} %really only need 2 columns, extra one is to
+				 				% fix alignment
+			\phantom{aaaaaaaaa} 	% hack to have break between columns align with 
+								% break between first name and last name
+			& Lewis \& Clark College \hspace{.4cm}
+				& 971.270.8802\\
+ 			& Department of Mathematics
+				& \url{lvanmeter@lclark.edu}\\
+% 			& Box 354350
+%                & \texttt{www.math.washington.edu/$\sim$lucasvm}\\
+			& Portland, OR 97219, USA
+				& Last Updated: \today 
+		\end{tabular}
+	\end{center}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Education}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+			\begin{date_section}
+		
+				\yearsingle{}{2019}%{May}
+				  Ph.D. Mathematics, University of Washington \\
+				  Advisor: Max Lieblich
+		
+				\yearsingle{}{2012}%{May}  
+				B.S. Mathematics, Haverford College
+		
+			\end{date_section}
+			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Publicaiton and Preprints}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{date_section}
+\yearexp{Jul. 2018}{}\emph{Two Hilbert Schemes in Computer Vision} (with Max Lieblich). Submitted. Preprint available at \url{https://arxiv.org/abs/1707.09332}
+
+        
+        %Abstract: We study multiview moduli problems that arise in computer vision. We show that these moduli spaces are always smooth and irreducible, in both the calibrated and uncalibrated cases, for any number of views. We also show that these moduli spaces always embed in suitable Hilbert schemes, and that these embeddings are open immersions for more than four views.
+        
+			\yearmo{}{}\emph{The Essential Variety Revisited} (with Ben Antiou, Max Lieblich, and Bianca Viray). In progress.
+			\end{date_section}
+        
+        %Abstract: We give a new description of the essential variety that simultaneously recovers seminal work of Demazure and recent results of Kileel-Fløystad-Ottaviani. We use this new construction to describe  a  new  five-point  solver  for  generic  data  based  upon  generic  Grobner  bases  for  ̈symmetric  bilinear  forms.
+			\end{itemize}
+			
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Research interests}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		\begin{date_section}
+		\yearmo{}{} Algebraic geometry, moduli problems, multiview geometry,  and computer vision
+		
+        \end{date_section}
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Invited Talks}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	    \begin{date_section}
+	           \yearexp{Oct. 2019}{}
+				  \emph{A New Construction of the Essential Variety}, SIAM PNW meeting, Univ. of Seattle
+	          \yearexp{Jun. 2019}{}
+				  \emph{A Geometric Construction of the Essential Variety}, SIAM Conference on Applied 
+				  \yearexp{}{} \hspace{.8cm} Algebraic Geometry , University of Bern, Switzerland
+		      \yearexp{Apr. 2019}{}
+				  \emph{A Functorial Approach to Multiview Geometry}, Algebra Seminar, Univ. of Washington
+				  
+				\yearexp{Aug. 2017}{}\emph{Two Hilbert Schemes in Algebraic Geometry}, SIAM conference on Applied Algebraic 
+				\yearexp{}{} \hspace{.8cm} Geometry, Georgia Institute of Technology
+        \end{date_section}
+			
+				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Awards}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+			\begin{date_section}
+				\yearsingle{}{2018}\textit{Excellence in Teaching}, University of Washington
+					
+		
+			\end{date_section}
+
+	
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Teaching}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		    \begin{date_section}
+				\yearmo{}{}\textbf{\textsc{Lewis \& Clark College}}
+				\yearsingle{}{2019}
+					Math 131: Calculus I (Fall)
+				\yearsingle{}{}
+					Math 132: Calculus II (Fall)
+		
+				\yearmo{}{}\textbf{\textsc{University of Washington}}, Instructor of Record
+				\yearsingle{}{2019}
+					Math 324: Advanced Multivariable Calculus (Spring)
+				\yearsingle{}{2018}
+					Math 324: Advanced Multivariable Calculus (Spring, Fall, Winter)
+				%\yearsingle{}{Spring}
+				%	Math 324: Advanced Multivariable Calculus
+				\yearsingle{}{}
+					Math 308: Linear Algebra (Winter) 
+				\yearsingle{}{2017}
+	                Math 324: Advanced Multivariable Calculus (Fall, Winter)
+				%\yearsingle{}{Winter}
+	             %  Math 324: Advanced Multivariable Calculus
+				\yearsingle{}{2016}
+	                Math 309: Linear Analysis (Spring, Summer) 
+				%\yearmo{}{Spring}
+	             %  Math 309: Linear Analysis	                
+	            \yearsingle{}{}
+	                Math 308: Linear Algebra (Winter)
+				\yearsingle{}{2015}
+					Math 126: Calculus with Analytic Geometry (Summer)
+				\vspace{.3cm}
+	            \yearsingle{}{}\textbf{\textsc{University of Washington}}, Teaching Assistant
+	            \yearsingle{}{2016}
+	            	Math 125: Calculus II -- Integration (Fall)           
+	            \yearsingle{}{2015}
+	                Online Math 125: Calculus II -- Integration (Fall)
+	            \yearsingle{}{}
+	            	Math 126: Calculus with Analytic Geometry (Spring)	            
+	            \yearsingle{}{2014}
+	            	Math 111: Business Calculus I (Summer)
+	            %\yearsingle{}{}
+	            %	Math 111: Business Calculus I (Spring)
+	            \yearsingle{}{}
+	            	Math 124: Calculus I -- Derivatives (Spring)
+	            \yearsingle{}{2013}
+	                Math 125: Calculus II -- Integration (Fall)
+	            \vspace{.3cm}    
+	           \yearsingle{}{}\textbf{\textsc{Freedom Education Project Puget Sound}}, Instructor of Record\\
+	            at the Washington Corrections Center for Women
+	           	\yearsingle{}{2018}
+	           	           		College Math Prep III (Spring)	 
+	           	\yearsingle{}{}
+	           					College Math Prep II (Winter)
+	           \yearsingle{}{2017}
+	           		Math in Society -- Tacoma Community College accredited    (Fall)	           		          		
+	           \vspace{.3cm}
+	           \yearsingle{}{}\textbf{\textsc{MathILy-Er Summer Program}}, Apprentice Instructor
+	           \yearsingle{}{2018}
+		           Linear algebra, graph theory, discrete math (Summer)
+		            \yearsingle{}{}
+		            Math and Politics (Summer)
+	           \yearsingle{}{2017}
+		           	Linear algebra, graph theory, discrete math (Summer)
+		           	\yearsingle{}{}
+		           Combinatorial Games	(Summer)		
+		
+			\end{date_section}
+
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\sectionheading{Curriculum Development} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-1ex}
+			\begin{itemize}[leftmargin = 2.7cm]
+			\itemsep=.25mm
+			\item[$\diamond$] \textit{Math in Society (FEPPS):} created detailed packets of supplementary materials and problems specifically designed to help students thrive within prison 
+			\item[$\diamond$] \textit{Math Prep II and III (FEPPS):} designed curriculum covering topics and skills from pre-algebra and algebra in order to prepare students for a college-level course
+			\item[$\diamond$] \textit{Multivariable Calculus (UW):} developed an extensive Canvas course webpage which included daily reading quizzes and online homework submissions designed to complement a model in which students focus on problem solving in class.
+			\item[$\diamond$] \textit{Math Circle (UW):} wrote dozens of worksheets, lesson plans, and hands-on activities exploring accessible and beautiful topics in mathematics
+			\item[$\diamond$] \textit{MathILy-Er Summer Program:} designed and taught several five-day mini-courses for high school students, including mini-courses on Markov chains, generating functions, the $p$-adics numbers, symmetric polynomials, and cryptography
+			\end{itemize}
+
+		
+
+						
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Service \& Community Outreach}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+			\begin{date_section}
+				\yearrange{2015}{2019}  University of Washington Math Circle, First Year Instructor 
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$] Meet weekly with ten to twenty middle school students to explore and discover beautiful mathematics using a proof-based approach
+								\end{itemize}
+				
+				\yearrange{2018}{2019} Washington Directed Reading Program
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$] Mentor and assist an undergraduate with a quarter long reading project
+								\end{itemize}
+				
+			
+				
+			
+				\yearrange{2016}{2017}	Mentor, Washington Experimental Math Laboratory
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$]Mentor and assist undergraduate math researchers studying voting theory, non-transitive dice, and their connections
+								\end{itemize}
+			
+				\yearrange{2013}{2019} Association for Women in Mathematics
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$] Participate in AWM events such as undergraduate study halls  
+							\item[$\diamond$] Support underrepresented groups in mathematics by attending chapter meetings
+
+								\end{itemize}	
+		
+				
+				\yearmo{}{2017, 2018} Julia Robinson Math Festival
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$] One day festival for elementary and middle school students
+							\item[$\diamond$] Lead small groups of students through  mathematical experiences such as exploring what happens when you cut a M\"{o}bious band in half
+								\end{itemize}
+								
+			\yearrange{2009}{2012} 8th Dimension Tutor, Haverford College
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$] Work with local elementary, middle, and high school students who need tutoring in math and English
+								\end{itemize}
+								
+	        \yearrange{2006}{2010} Outdoor School Special Needs Volunteer
+				\vspace{-.2cm}
+							\begin{itemize}[leftmargin = 0cm]
+			\itemsep=-1.5mm		
+							\item[$\diamond$] Teach science education in a summer camp setting using a dynamic curriculum that required creativity and lots of hands-on activities
+                            \item[$\diamond$] Responsible for the safety and well-being of a single special needs student at all times during the week of camp
+								\end{itemize}
+								
+			\end{date_section}
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Conferences Attended}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	    \begin{date_section}
+		  
+		    \yearexp{Oct. 2019}{} SIAM PNW meeting, University of Seattle, Seattle, WA
+		    \yearexp{Jun. 2019}{} SIAM Conference on Applied Algebraic Geometry , University of Bern, Switzerland
+            \yearexp{Mar. 2017}{} Arizona Winter School: Perfectoid Spaces, Tucson, AZ
+            \yearexp{May\,\, 2016}{} AIM workshop: Algebraic Vision, San Jose, CA
+            \yearexp{Mar. 2015}{} Arizona Winter School: Arithmetic and Higher-Dimensional Varieties, Tucson, AZ
+            \yearrange{2015}{2019} Western Algebraic Geometry Symposium, Regional bi-annual meetings
+
+		\end{date_section}
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
