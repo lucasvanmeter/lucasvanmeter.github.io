@@ -36,15 +36,6 @@ body > header > nav > a:hover {
   color: #000;
 }
 
-/* /HEADER */
-
-/* MAIN */
-
-main {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 #container {
     display: flex;
 }
@@ -56,6 +47,16 @@ main {
 #col2 {
     flex-basis: 100%;
 }
+
+/* /HEADER */
+
+/* MAIN */
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 
 /* /MAIN */
 
@@ -86,6 +87,7 @@ table.calendar td,th {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-tr:nth-child(6n+1){background-color: #f2f2f2}
-tr:nth-child(6n+2){background-color: #f2f2f2}
-tr:nth-child(6n+3){background-color: #f2f2f2}
+tr:nth-child(8n+1){background-color: #f2f2f2}
+tr:nth-child(8n+2){background-color: #f2f2f2}
+tr:nth-child(8n+3){background-color: #f2f2f2}
+tr:nth-child(8n+4){background-color: #f2f2f2}
