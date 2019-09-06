@@ -83,7 +83,7 @@ table.calendar {
     border-collapse: collapse;
 }
 table.calendar td,th {
-    padding: 8px;
+    padding: 4px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
