@@ -1,0 +1,29 @@
+Circle c Circle c: Circle with center A and radius 1 Circle c Circle c:
+Circle with center A and radius 1 Sector d Sector d: CircularSector[A,
+D, B] Sector d Sector d: CircularSector[A, D, B] Arc e Arc e:
+CircularArc[A, D, B] Segment i Segment i: Segment [A, E] Segment b
+Segment b: Segment [A, D] of Triangle poly1 Segment a Segment a: Segment
+[D, B] of Triangle poly1 Segment d_1 Segment d_1: Segment [B, A] of
+Triangle poly1 Segment f_1 Segment f_1: Segment [A, D] of Triangle poly2
+Segment a_1 Segment a_1: Segment [D, F] of Triangle poly2 Segment d_2
+Segment d_2: Segment [F, A] of Triangle poly2 Segment j Segment j:
+Segment [E, B] Segment k Segment k: Segment [D, F] Segment l Segment l:
+Segment [A, F] Segment m Segment m: Segment [E, D] Segment n Segment n:
+Segment [D, B] Point A Point A: Intersection point of xAxis, yAxis Point
+A Point A: Intersection point of xAxis, yAxis Point A Point A:
+Intersection point of xAxis, yAxis Point B Point B: Point on c Point B
+Point B: Point on c Point B Point B: Point on c Point D Point D:
+Intersection point of c, xAxis Point D Point D: Intersection point of c,
+xAxis Point D Point D: Intersection point of c, xAxis Point E Point E:
+Intersection point of xAxis, h Point E Point E: Intersection point of
+xAxis, h Point E Point E: Intersection point of xAxis, h Point F Point
+F: Intersection point of f, g Point F Point F: Intersection point of f,
+g Point F Point F: Intersection point of f, g \sin(x) text1 = "\sin(x)"
+\sin(x) text1 = "\sin(x)" \sin(x) text1 = "\sin(x)" \sin(x) text1 =
+"\sin(x)" \sin(x) text1 = "\sin(x)" \sin(x) text1 = "\sin(x)" \cos(x)
+text2 = "\cos(x)" \cos(x) text2 = "\cos(x)" \cos(x) text2 = "\cos(x)"
+\cos(x) text2 = "\cos(x)" \cos(x) text2 = "\cos(x)" \cos(x) text2 =
+"\cos(x)" \tan(x) text3 = "\tan(x)" \tan(x) text3 = "\tan(x)" \tan(x)
+text3 = "\tan(x)" \tan(x) text3 = "\tan(x)" \tan(x) text3 = "\tan(x)"
+\tan(x) text3 = "\tan(x)" x text4 = "x"
+
