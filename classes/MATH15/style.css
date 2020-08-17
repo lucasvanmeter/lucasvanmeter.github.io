@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+
+body > header {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+body > header > nav {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+body > header > nav > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  text-decoration: none;
+  color: #777;
+}
+
+body > header > nav > a:hover {
+  color: #000;
+}
+
+#container {
+    display: flex;
+}
+
+#col1 {
+    flex-basis:20%;
+}
+
+#col2 {
+    flex-basis: 100%;
+}
+
+/* /HEADER */
+
+/* MAIN */
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/* /MAIN */
+
+/* FOOTER */
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* /FOOTER */
+
+/* COURSE PAGE */
+table {
+    border-color: #1a2830;
+}
+table.homework {
+    border-spacing: 20px;
+}
+table.tablewithcolspacing  td {
+    padding: 0 15px 0 15px;
+}
+table.calendar {
+    border-collapse: collapse;
+}
+table.calendar td,th {
+    padding: 4px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(8n+1){background-color: #f2f2f2}
+tr:nth-child(8n+2){background-color: #f2f2f2}
+tr:nth-child(8n+3){background-color: #f2f2f2}
+tr:nth-child(8n+4){background-color: #f2f2f2}
