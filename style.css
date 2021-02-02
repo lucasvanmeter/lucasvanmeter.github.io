@@ -38,6 +38,9 @@ body > header > nav > a:hover {
 
 /* /HEADER */
 
+summary {
+    font-size: 20px;   
+}
 
 /* MAIN */
 
