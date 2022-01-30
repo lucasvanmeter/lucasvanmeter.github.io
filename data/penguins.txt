@@ -1,4 +1,4 @@
-dive_heart_rate_bpm	Depth_m	Duration_min	Bird
+dive_heart_rate_bpm	depth_m	duration_min	bird
 88.8	5	1.05	EP19
 103.4	9	1.1833333	EP19
 97.4	22	1.9166667	EP19
