@@ -61,6 +61,26 @@ main {
     flex-basis: 100%;
 }
 
+#section-contact {
+  margin-bottom: 20px;
+}
+
+#section-contact > div {
+  display: flex;
+  align-items: center;
+}
+
+#section-contact > div > span {
+  font-size: 2rem;
+  width: 60px;
+  text-align: center;
+}
+
+#section-contact > div > span > img {
+  width: 25px;
+  height: 25px;
+}
+
 /* /MAIN */
 
 /* FOOTER */

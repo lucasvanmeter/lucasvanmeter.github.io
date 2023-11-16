@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lucas Van Meter - Personal Webpage</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="vendor/normalize.min.css">
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="vendor/milligram.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JHZWLS2P3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3JHZWLS2P3');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="programming.html">Programming</a>
+      <a href="teachingandlearning.html">Teaching Learning</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="set.html">SET</a>
+      <a href="cv.html">CV/Resume</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="section-about">
+      <h1>Programming</h1>
+
+      <a href="https://github.com/lucasvanmeter">See all my project on GitHub.</a>
+
+      <h2>Maps with respect to travel time</h2>
+
+      <p>The goal of this project is to distort physical distance maps so that distance reflects travel time between all pairs of points. This might sound like an "isochrone", but those are maps that only show travel time from a single origin. We want a map where all distances between any pair of points depicts travel time. We should point out that this is impossible for many reasons, but how close can we get?</p>
+
+      <p>We start with a city map like this.</p>
+
+      <img alt="Connect four" src="img/portland1.png" style="width:300px;object-fit: cover;">
+
+      <p>Then we pick out some key points and compute the pairwise travel time between them all.</p>
+
+      <img alt="Connect four" src="img/portland2.png" style="width:300px;object-fit: cover;">
+
+      <p>Next we do something to transform that grid of points so they reflect pairwise travel time better (currently using a machine learning algorithm but more experementation is needed).</p>
+
+
+      <img alt="Connect four" src="img/portland3.png" style="width:300px;object-fit: cover;">
+ 
+      <p>Finaly, we interpolate the tranformation sending the original grid of points to the new points. This can really mess up the image!</p>
+
+      <img alt="Connect four" src="img/portland4.png" style="width:300px;object-fit: cover;">
+
+      <p>This project needs a bit of work but it is fun to play around with the possabilities!</p>
+
+      <h2>Connect 4</h2>
+      An implimentation of connect 4 in JavaScript. <a href="http://lucasvanmeter.github.io/connect4js/connect4.html">Click here to play!</a> 
+      <br>
+      <img alt="Connect four" src="img/connect4.png" style="width:300px;object-fit: cover;">
+      
+  
+
+  </main>
+
+
+  <footer>
+  	<p>© 2023 Lucas Van Meter</p>
+    <p>I would like to give credit to
+      <a href="https://tscholl2.github.io/website/index.html">Travis Scholl</a> for the design of this website.</p>
+  </footer>
+
+</body>
+
+</html>
